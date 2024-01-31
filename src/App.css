@@ -1,0 +1,13 @@
+.App{
+
+    background-color: gainsboro;
+}
+
+.Disc{
+    font: "Roboto";
+    font-size: large;
+}
+
+.Tagline{
+    font-size: small;
+}
