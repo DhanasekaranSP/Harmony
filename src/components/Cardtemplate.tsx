@@ -46,7 +46,7 @@ export const Cardtemplate = ({ imageSrc, title, audioSrc }) => {
           width: 200,
           height: 200,
           position: "relative",
-          backgroundColor: "snow",
+          // backgroundColor: "snow",
         }}
       >
         <CardContent style={{ padding: 5 }}>
