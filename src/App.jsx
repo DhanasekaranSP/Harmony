@@ -46,7 +46,12 @@ function App() {
           spacing={3}
           justifyContent="center"
           alignItems="center"
-          style={{ paddingTop: 25, paddingBottom: 50 }}
+          style={{
+            paddingTop: 25,
+            paddingBottom: 50,
+            paddingLeft: 20,
+            paddingRight: 20,
+          }}
         >
           {sound.map((audioSrc, index) => (
             <Grid item key={index} sx="auto">
