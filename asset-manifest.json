@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Harmony/static/css/main.d179ab49.css",
-    "main.js": "/Harmony/static/js/main.7d289148.js",
+    "main.css": "/Harmony/static/css/main.035a6372.css",
+    "main.js": "/Harmony/static/js/main.0c12fb1c.js",
     "static/js/787.9b708c7f.chunk.js": "/Harmony/static/js/787.9b708c7f.chunk.js",
     "static/media/leaves_sound.mp3": "/Harmony/static/media/leaves_sound.69ebe2d27febc897326d.mp3",
     "static/media/snow_sound.mp3": "/Harmony/static/media/snow_sound.c65ec9ab271089917602.mp3",
@@ -36,12 +36,12 @@
     "static/media/whitenoise.svg": "/Harmony/static/media/whitenoise.afd8f354e55602af41a305104a5f726c.svg",
     "static/media/cafe.svg": "/Harmony/static/media/cafe.f9417f97d608ee29915f230a4588fe91.svg",
     "static/media/river.svg": "/Harmony/static/media/river.6b62e726e29356a72d71a0629894bc95.svg",
-    "main.d179ab49.css.map": "/Harmony/static/css/main.d179ab49.css.map",
-    "main.7d289148.js.map": "/Harmony/static/js/main.7d289148.js.map",
+    "main.035a6372.css.map": "/Harmony/static/css/main.035a6372.css.map",
+    "main.0c12fb1c.js.map": "/Harmony/static/js/main.0c12fb1c.js.map",
     "787.9b708c7f.chunk.js.map": "/Harmony/static/js/787.9b708c7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d179ab49.css",
-    "static/js/main.7d289148.js"
+    "static/css/main.035a6372.css",
+    "static/js/main.0c12fb1c.js"
   ]
 }
