@@ -6,11 +6,11 @@ import Typography from "@mui/material/Typography";
 import Slider from "@mui/material/Slider";
 import { CardActionArea } from "@mui/material";
 
-export const Cardtemplate = ({ imageSrc, title, audioSrc }) => {
+export const Cardtemplate = ({ imageSrc, title, audioSrc ,darkMode}) => {
+  
   const [showSlider, setShowSlider] = useState(false);
   const [volume, setVolume] = useState(50);
   const [isPlaying, setIsPlaying] = useState(false);
-
   const audioRef = useRef(new Audio(audioSrc));
 
   const handleCardClick = () => {
@@ -20,9 +20,7 @@ export const Cardtemplate = ({ imageSrc, title, audioSrc }) => {
     } else {
       audioRef.current.play();
     }
-
     setIsPlaying(!isPlaying);
-
     setShowSlider(!showSlider);
   };
 
@@ -46,7 +44,7 @@ export const Cardtemplate = ({ imageSrc, title, audioSrc }) => {
           width: 200,
           height: 200,
           position: "relative",
-          // backgroundColor: "snow",
+          backgroundColor: darkMode? "#303030":"snow",
         }}
       >
         <CardContent style={{ padding: 5 }}>
@@ -56,7 +54,7 @@ export const Cardtemplate = ({ imageSrc, title, audioSrc }) => {
         </CardContent>
 
         <CardMedia
-          style={{ objectFit: "contain", objectPosition: "center" }}
+          style={{ objectFit: "contain", objectPosition: "center" ,  filter: darkMode? 'invert(1)' : 'none' }}
           component="img"
           height="120"
           image={imageSrc}
@@ -66,6 +64,17 @@ export const Cardtemplate = ({ imageSrc, title, audioSrc }) => {
         <CardContent>
           {showSlider && (
             <Slider
+            sx={{
+              "& .MuiSlider-rail": {
+                backgroundColor: darkMode ? "white" : "#aab4be", // Adjust rail color
+              },
+              "& .MuiSlider-track": {
+                backgroundColor: darkMode ? "white" : "#1976d2", // Adjust track color
+              },
+              "& .MuiSlider-thumb": {
+                backgroundColor: darkMode ? "white" : "#001e3c", // Adjust thumb color
+              },
+            }}
               valueLabelDisplay="auto"
               value={volume}
               onChange={handleSliderChange}
