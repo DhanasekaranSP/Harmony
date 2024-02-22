@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
@@ -6,12 +6,25 @@ import Typography from "@mui/material/Typography";
 import Slider from "@mui/material/Slider";
 import { CardActionArea } from "@mui/material";
 
-export const Cardtemplate = ({ imageSrc, title, audioSrc ,darkMode}) => {
-  
+export const Cardtemplate = ({
+  imageSrc,
+  title,
+  audioSrc,
+  darkMode,
+  muted,
+}) => {
   const [showSlider, setShowSlider] = useState(false);
   const [volume, setVolume] = useState(50);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(new Audio(audioSrc));
+
+  useEffect(() => {
+    if (muted) {
+      audioRef.current.volume = 0;
+    } else {
+      audioRef.current.volume = volume / 100;
+    }
+  }, [muted, volume]);
 
   const handleCardClick = () => {
     if (isPlaying) {
@@ -44,7 +57,7 @@ export const Cardtemplate = ({ imageSrc, title, audioSrc ,darkMode}) => {
           width: 200,
           height: 200,
           position: "relative",
-          backgroundColor: darkMode? "#303030":"snow",
+          backgroundColor: darkMode ? "#303030" : "snow",
         }}
       >
         <CardContent style={{ padding: 5 }}>
@@ -54,7 +67,11 @@ export const Cardtemplate = ({ imageSrc, title, audioSrc ,darkMode}) => {
         </CardContent>
 
         <CardMedia
-          style={{ objectFit: "contain", objectPosition: "center" ,  filter: darkMode? 'invert(1)' : 'none' }}
+          style={{
+            objectFit: "contain",
+            objectPosition: "center",
+            filter: darkMode ? "invert(1)" : "none",
+          }}
           component="img"
           height="120"
           image={imageSrc}
@@ -64,17 +81,17 @@ export const Cardtemplate = ({ imageSrc, title, audioSrc ,darkMode}) => {
         <CardContent>
           {showSlider && (
             <Slider
-            sx={{
-              "& .MuiSlider-rail": {
-                backgroundColor: darkMode ? "white" : "#aab4be", // Adjust rail color
-              },
-              "& .MuiSlider-track": {
-                backgroundColor: darkMode ? "white" : "#1976d2", // Adjust track color
-              },
-              "& .MuiSlider-thumb": {
-                backgroundColor: darkMode ? "white" : "#001e3c", // Adjust thumb color
-              },
-            }}
+              sx={{
+                "& .MuiSlider-rail": {
+                  backgroundColor: darkMode ? "white" : "#aab4be", // Adjust rail color
+                },
+                "& .MuiSlider-track": {
+                  backgroundColor: darkMode ? "white" : "#1976d2", // Adjust track color
+                },
+                "& .MuiSlider-thumb": {
+                  backgroundColor: darkMode ? "white" : "#001e3c", // Adjust thumb color
+                },
+              }}
               valueLabelDisplay="auto"
               value={volume}
               onChange={handleSliderChange}

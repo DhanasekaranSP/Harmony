@@ -16,6 +16,12 @@ import titles from "./assets/titles/index.tsx";
 function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const [darkMode, setDarkMode] = useState(prefersDarkMode);
+  const [muted, setMuted] = useState(false);
+
+  const toggleMute = () => {
+    setMuted(!muted);
+  };
+
   useEffect(() => {
     setDarkMode(prefersDarkMode);
   }, [prefersDarkMode]);
@@ -39,6 +45,8 @@ function App() {
           onDarkModeChange={() => {
             setDarkMode(!darkMode);
           }}
+          onToggleMute={toggleMute}
+          muted={muted}
         />
 
         <Grid
@@ -47,7 +55,7 @@ function App() {
           justifyContent="center"
           alignItems="center"
           style={{
-            paddingTop: 25,
+            paddingTop: 10,
             paddingBottom: 50,
             paddingLeft: 20,
             paddingRight: 20,
@@ -60,6 +68,7 @@ function App() {
                 title={titles[index]}
                 imageSrc={icon[index]}
                 darkMode={darkMode}
+                muted={muted}
               />
             </Grid>
           ))}
