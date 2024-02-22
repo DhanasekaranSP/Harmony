@@ -4,6 +4,7 @@ import { CustomSwitch } from "./CustomSwitch.tsx";
 import { IconButton } from "@mui/material";
 import VolumeUpRoundedIcon from "@mui/icons-material/VolumeUpRounded";
 import VolumeOffRoundedIcon from "@mui/icons-material/VolumeOffRounded";
+import RestartAltRoundedIcon from '@mui/icons-material/RestartAltRounded';
 
 const Headers = styled.header`
   max-width: 70rem;
@@ -26,7 +27,7 @@ const SwitchContainer = styled.div`
   right: 20px;
 `;
 
-export const Header = ({ darkMode, onDarkModeChange, onToggleMute, muted }) => {
+export const Header = ({ darkMode, onDarkModeChange, onToggleMute, ontoggleReset, muted }) => {
   return (
     <Headers>
       <H1>Harmony</H1>
@@ -49,6 +50,18 @@ export const Header = ({ darkMode, onDarkModeChange, onToggleMute, muted }) => {
         }}
       >
         {muted ? <VolumeOffRoundedIcon /> : <VolumeUpRoundedIcon />}
+      </IconButton>
+
+      <IconButton
+        onClick={ontoggleReset}
+        size="large"
+        sx={{
+          marginLeft: 1,
+          boxShadow: 5,
+          backgroundColor: darkMode ? "#303030" : "snow",
+        }}
+      >
+        {<RestartAltRoundedIcon />}
       </IconButton>
     </Headers>
   );

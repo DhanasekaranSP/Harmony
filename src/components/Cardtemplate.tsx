@@ -12,6 +12,7 @@ export const Cardtemplate = ({
   audioSrc,
   darkMode,
   muted,
+  reset,
 }) => {
   const [showSlider, setShowSlider] = useState(false);
   const [volume, setVolume] = useState(50);
@@ -25,6 +26,16 @@ export const Cardtemplate = ({
       audioRef.current.volume = volume / 100;
     }
   }, [muted, volume]);
+
+  useEffect(() => {
+    if (reset || !reset) {
+      setVolume(50);
+      setIsPlaying(false);
+      setShowSlider(false);
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+  }, [reset])
 
   const handleCardClick = () => {
     if (isPlaying) {

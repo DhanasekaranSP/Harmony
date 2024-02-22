@@ -17,6 +17,11 @@ function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const [darkMode, setDarkMode] = useState(prefersDarkMode);
   const [muted, setMuted] = useState(false);
+  const [reset, setReset] = useState(false);
+
+  const toggleReset = () => {
+    setReset(!reset);
+  };
 
   const toggleMute = () => {
     setMuted(!muted);
@@ -46,6 +51,7 @@ function App() {
             setDarkMode(!darkMode);
           }}
           onToggleMute={toggleMute}
+          ontoggleReset={toggleReset}
           muted={muted}
         />
 
@@ -69,6 +75,7 @@ function App() {
                 imageSrc={icon[index]}
                 darkMode={darkMode}
                 muted={muted}
+                reset={reset}
               />
             </Grid>
           ))}
