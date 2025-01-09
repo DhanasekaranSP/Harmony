@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+<div align="center" id="top">
+<img src='/public/buddha.png' width='200'/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://dhanasekaransp.github.io/Harmony/">Demo</a>
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+<div align="center">
+  <h1>Harmony</h1>
+</div>
 
-### `npm start`
+> Harmony is an app with nature sounds to help you focus, sleep, relax and relieve stress.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [Screenshots](#screenshots)
+- [Getting started](#getting-started)
+- [Features](#features)
+- [Tech stack](#tech-stack)
+- [Author](#author)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+### Main Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Example screenshot](/public/assets/image.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run this project locally, you will need to have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) (or [Yarn](https://yarnpkg.com/)) installed on your machine.
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/DhanasekaranSP/Harmony.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navigate to the project directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd Harmony
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install the dependencies:
 
-## Learn More
+```bash
+npm install
+# or
+yarn install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Run the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-### Code Splitting
+The app will be available at http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Features
 
-### Analyzing the Bundle Size
+- Multiple sound options: More than 10+ sound to choose from.
+- Sound controls: The ability to randomize the sound, mute the currently playing sound, and stop all currently playing sounds.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Tech stack
 
-### Making a Progressive Web App
+- [Next.js](https://nextjs.org/): A framework for building server-rendered React apps
+- [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Chayutpong Jamneanpongphan (DEATHTINYZ)](https://www.instagram.com/ur.ddream/)
