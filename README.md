@@ -5,7 +5,9 @@
 </div>
 
 <div align="center">
+<a href="https://dhanasekaransp.github.io/Harmony/" target="_blank">
   <h1>Harmony</h1>
+</a>
 </div>
 
 > Harmony is an app with nature sounds to help you focus, sleep, relax and relieve stress.
