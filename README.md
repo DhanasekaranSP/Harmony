@@ -1,34 +1,25 @@
 <div align="center" id="top">
+<a href="https://dhanasekaransp.github.io/Harmony/">
 <img src='/public/buddha.png' width='200'/>
-
-<a href="https://dhanasekaransp.github.io/Harmony/">Demo</a>
-
 </div>
-
 <div align="center">
   <h1>Harmony</h1>
 </div>
+</a>
 
 > Harmony is an app with nature sounds to help you focus, sleep, relax and relieve stress.
 
 
 ## Table of Contents
 
-- [Screenshots](#screenshots)
 - [Getting started](#getting-started)
 - [Features](#features)
 - [Tech stack](#tech-stack)
 - [Author](#author)
 
-## Screenshots
-
-### Main Page
-
-![Example screenshot](/public/assets/image.png)
-
 ## Getting started
 
-To run this project locally, you will need to have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) (or [Yarn](https://yarnpkg.com/)) installed on your machine.
+To run this project locally, you will need to have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/)
 
 1. Clone the repository:
 
@@ -46,32 +37,30 @@ cd Harmony
 
 ```bash
 npm install
-# or
-yarn install
 ```
 
 4. Run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm start
 ```
 
-The app will be available at http://localhost:3000.
+The app will be available at http://localhost:3000/Harmony
 
 ## Features
 
-- Multiple sound options: More than 10+ sound to choose from.
-- Sound controls: The ability to randomize the sound, mute the currently playing sound, and stop all currently playing sounds.
+- Key-Features: Multi-audio playback, individual volume control, and mute-all functionality.
+- Sound controls: The ability to mute the currently playing sound, mute all sound, and stop/reset all currently playing sounds.
+- Customization: Theme toggling for a personalized user experience.
+- Design: Intuitive UI focused on simplicity and ease of use.
+- Purpose: Creates a calming environment for meditation, focus, or productivity.
 
 ## Tech stack
 
-- [Next.js](https://nextjs.org/): A framework for building server-rendered React apps
-- [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript
 - [React](https://reactjs.org/): A JavaScript library for building user interfaces
-- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework
+- [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript
+
 
 ## Author
 
-[Chayutpong Jamneanpongphan (DEATHTINYZ)](https://www.instagram.com/ur.ddream/)
+[Dhanasekaran S P](https://www.instagram.com/dhanasekaran_prabakaran)
