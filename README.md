@@ -1,5 +1,5 @@
 <div align="center" id="top">
-<a href="https://dhanasekaransp.github.io/Harmony/">
+<a href="https://dhanasekaransp.github.io/Harmony/" target="_blank">
 <img src='/public/buddha.png' width='200'/>
 </div>
 <div align="center">
